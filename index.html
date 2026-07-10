@@ -25,7 +25,8 @@
                     <label for="tipo-membresia">Tipo de Membresía:</label>
                     <select id="tipo-membresia" required>
                         <option value="basico">Plan Básico ($30 USD/mes) - Solo Gym</option>
-                        <!-- ERROR/INCOMPLETO: Faltan las opciones "estudiante" ($25 USD/mes) y "premium" ($50 USD/mes) -->
+                        <option value="estudiante">Estudiante Universitario ($25 USD/mes) - Solo Gym en las tardes</option>
+                        <option value="premium">Plan Premium Total ($50 USD/mes) - Gym, Alberca y Regaderas</option>
                     </select>
                 </div>
 
@@ -37,9 +38,13 @@
                             <input type="radio" name="periodo" value="1" checked> 1 Mes (Precio base)
                         </label>
                         <label>
-                            <input type="radio" name="periodo" value="6"> 6 Meses (10% descuento total)
+                            <input type="radio" name="periodo" value="6"> 
+                            6 Meses (10% descuento total)
                         </label>
-                        <!-- ERROR/INCOMPLETO: Falta la opción de 12 Meses (20% descuento total) -->
+                         <label>
+                            <input type="radio" name="periodo" value="12" id="radio-12">
+                            12 Meses (20% descuento total)
+                         </label>
                     </div>
                 </div>
 
@@ -48,10 +53,16 @@
                     <label>Servicios Adicionales:</label>
                     <div class="checkbox-group">
                         <label>
-                            <input type="checkbox" name="adicional" value="casillero"> Casillero Inteligente (+$5 USD)
+                            <input type="checkbox" name="adicional" value="casillero" id="casillero"> 
+                            Casillero Inteligente (+$5 USD)
                         </label>
                         <label>
-                            <input type="checkbox" name="adicional" value="nutricion"> Asesoría Nutricional mensual (+$15 USD)
+                            <input type="checkbox" name="adicional" value="nutricion" id="nutricion"> 
+                            Asesoría Nutricional mensual (+$15 USD)
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="adicional" value="piscina" id="piscina">
+                            Acceso a la Piscina Olímpica (+$10 USD)
                         </label>
                         <!-- ERROR/INCOMPLETO: Falta el servicio de "Acceso a la Piscina Olímpica" (+$10 USD) -->
                     </div>
